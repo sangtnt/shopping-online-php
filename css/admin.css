@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+i{
+    padding: 0 10px
+}
+.menu{
+    background: #444444;
+    color: white;
+    display: flex;
+    padding: 10px 0;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.menu div{
+    padding: 0 10px;
+}
+.menu div:not(:last-child){
+    border-right: 1px solid white;
+}
+.menu div:last-child{
+    flex-grow: 1;
+    text-align: right;
+}
+.index-body{
+    background: black;
+}
+.notice-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -99;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+}
+.notice{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background: grey;
+    width: 400px;
+    border-radius: 5px;
+}
+.notice h1{
+    color: rgb(255, 0, 0);
+    animation: noticeAnimation 0.5s infinite linear;
+}
+@keyframes noticeAnimation{
+    0%{
+        color: red;
+    }
+    100%{
+        color: rgb(100, 0, 0);
+    }
+}
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.table, .table tr, .table td, .table th{
+    border: 1px solid black;
+    text-align: center;
+}
+.table tr, .table td, .table th{
+    padding: 5px 20px;
+}
+.table{
+    flex-grow: 1;
+    margin: 30px;
+}
+.handler-form{
+    padding: 10px;
+    border: 1px dotted black;
+    margin: 30px;
+    height: auto;
+    display: none;
+}
+.table-order .order{
+    position: relative;
+}
+.table-order .order:hover{
+    background: #cacaca;
+    cursor: pointer;
+}
+.order-detail{
+    margin: 50px;
+    padding: 20px;
+    background: #cacaca;
+    border-radius: 10px;
+}
+.order-detail .pending{
+    color: blue;
+    font-weight: bold;
+}
+.order-detail .accept{
+    color: green;
+    font-weight: bold;
+}
+.order-detail .canceled{
+    color: red;
+    font-weight: bold;
+}
+.order-detail .table{
+    display: flex;
+    background: white;
+}
+.order-detail .table table{
+    flex-grow: 1;
+}
+.order-detail .table table tfoot td{
+    text-align: right;
+}
+.order-detail .table table tfoot .total{
+    color: red;
+    font-size: 30px;
+}
+.un-selected{
+    pointer-events: none;
+    opacity: 0.5;
+}
