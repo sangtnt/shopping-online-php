@@ -28,8 +28,7 @@
                     <label class=\"plus plus-none\"><i class=\"fas fa-plus\"></i></label>
                     <span class=\"text\"><span class=\"pro-qty\">".number_format($pro["quantity"],0,",",".")."</span> items available!</span>
                 </div>
-                <label id=\"addToCart\" class=\"add-cart\"><i class=\"fas fa-cart-plus\"></i>Add to cart</label>
-                <label class=\"buy\"><i class=\"fas fa-shopping-bag\"></i>Buy now</label>
+                <label id=\"addToCart\" class=\"add-cart\"><i class=\"fas fa-cart-plus\"></i>Add to cart</label>    
             ";
         }
         else{
